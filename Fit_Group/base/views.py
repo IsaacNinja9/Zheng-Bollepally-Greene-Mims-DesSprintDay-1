@@ -4,7 +4,7 @@ from django.http import HttpResponse
 # Create your views here.
 
 def home(request): # for looking at progress
-    return HttpResponse('Home page')
+    return render(request, 'home.html')
 
 def training_options(request):
-    return HttpResponse('Options for Gym Training')
+    return render(request, 'training_options.html')
