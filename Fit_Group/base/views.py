@@ -8,3 +8,9 @@ def home(request): # for looking at progress
 
 def training_options(request):
     return render(request, 'training_options.html')
+
+def groups_view(request):
+    return render(request, 'groups.html')
+
+def leaderboard_view(request):
+    return render(request, 'leaderboards.html')
